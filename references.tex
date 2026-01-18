@@ -1,0 +1,113 @@
+\documentclass[a4paper,12pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES (matching resume)
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip}
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+
+% Section formatting (same as resume)
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+% \titlespacing{\section}{0pt}{10pt}{10pt}
+\titlespacing{\section}{0pt}{8pt}{6pt}
+
+
+% Hyperref colors
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{
+    colorlinks,
+    breaklinks,
+    urlcolor=linkcolour,
+    linkcolor=linkcolour
+}
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+\pagestyle{empty}
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+\newcommand{\referenceseparator}{
+    \vspace{2em}
+    \hrule
+    \vspace{2em}
+}
+
+%----------------------------------------------------------------------------------------
+%	HEADER (matches resume)
+%----------------------------------------------------------------------------------------
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Your Name Here} \\[7.5pt]
+\href{https://github.com/}{\raisebox{-0.05\height}\faGithub\ GitHub} \ $|$ \ 
+\href{https://www.linkedin.com/}{\raisebox{-0.05\height}\faLinkedin\ LinkedIn} \ $|$ \ 
+\href{mailto:janesmith@company.org}{\raisebox{-0.05\height}\faEnvelope \ janesmith@company.org} \ $|$ \ 
+\href{tel:+1 (234)4567890}{\raisebox{-0.05\height}\faMobile \ +1 (234) 456--7890} \\
+\end{tabularx}
+
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+\section{Professional References}
+% \vfill
+\vspace{2em}
+\begin{center}
+\begin{tabularx}{0.75\linewidth}{@{} C @{}}
+\textbf{Dr. Jane Smith} \\[2pt]
+Senior Research Scientist \\
+Department of Computer Science, University of Example \\
+\href{mailto:jane.smith@example.edu}{jane.smith@example.edu} \\
++1 (555) 123--4567
+\end{tabularx}
+\end{center}
+
+\referenceseparator
+
+\begin{center}
+\begin{tabularx}{0.75\linewidth}{@{} C @{}}
+\textbf{Mr. John Doe} \\[2pt]
+Engineering Manager \\
+Example Technologies Inc. \\
+\href{mailto:john.doe@example.com}{john.doe@example.com} \\
++1 (555) 987--6543
+\end{tabularx}
+\end{center}
+
+\referenceseparator
+
+\begin{center}
+\begin{tabularx}{0.75\linewidth}{@{} C @{}}
+\textbf{Ms. Alice Brown} \\[2pt]
+Project Lead \\
+Example Consulting Group \\
+\href{mailto:alice.brown@example.org}{alice.brown@example.org} \\
++1 (555) 246--8101
+\end{tabularx}
+\end{center}
+
+\referenceseparator
+
+% Fourth if needed -- not reccomended
+\begin{center}
+\begin{tabularx}{0.75\linewidth}{@{} C @{}}
+\textbf{Professor Jane Smith} \\[2pt]
+Team Lead \\
+Practice Group \\
+\href{mailto:jane.smith@example.org}{jane.smith@example.org} \\
++1 (555) 246--8735
+\end{tabularx}
+\end{center}
+\referenceseparator
+
+\vfill
+\center{\footnotesize Last updated: \today}
+
+\end{document}
